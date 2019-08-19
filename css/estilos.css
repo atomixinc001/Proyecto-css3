@@ -1,0 +1,441 @@
+header{background-color: #5b7989;
+  animation: slidein 2s;
+}
+body{
+  background-color: black;
+}
+.contenido
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  margin: auto;
+  display: block;
+  background-color: #02010a;
+}
+.titulo
+{text-align: left;
+color: white;
+text-shadow: 2px 2px 2px #02010a
+}
+.textoimagenes
+{
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.borde {border-radius: 12px;}
+
+.active
+{text-decoration: none !important;}
+.contenedorimgen1{
+  background-color: #82c3a6;
+}
+.imagenprincipal
+{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+
+}
+.paisaje1
+{
+  -webkit-filter:blur(10px);
+}
+.paisaje2
+{
+  -webkit-filter:grayscale(100%);
+}
+.paisaje4
+{
+  -webkit-filter:grayscale(100%);
+}
+.paisaje6
+{
+  -webkit-filter:grayscale(100%);
+}
+.paisaje3
+{
+  -webkit-filter:sepia(90%);
+}
+@-webkit-keyframes slidein{
+  0% {margin-top:150%}
+  60% {margin-top:-5%}
+  100% {margin-top:0%}
+}
+@media all and (min-width: 901px) {
+  .contenedor{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #d5c75f;
+  }
+  .paisaje1
+  {
+    order: 1;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje2
+  {
+    order: 2;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje3
+  {
+    order: 3;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje4
+  {
+    order: 4;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje5
+  {
+    order: 5;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje6
+  {
+    order: 6;
+    width: 25%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .bloque1{
+    order: 3;
+    flex-grow: 0.1;
+  }
+  .bloque2{
+    order: 2;
+  flex-grow: 0.1;
+  }
+  .bloque3{
+    order: 1;
+    flex-grow: 0.1;
+
+  }
+  .contenedorimagenes
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #d5c75f
+  }
+  .imagen2
+  {
+    order: 1;
+    width: 80%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    border: 1px solid black;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .imagen3
+  {
+    order: 2;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    border: 1px solid black;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+
+  .imagen2:hover
+  {animation: rotacion 2s;
+  }
+  @-webkit-keyframes sombra
+  {
+    to
+    {
+        box-shadow: 100px 150px 120px 0 #82c3a6;
+    }
+  }
+  .caja2:hover
+  {animation: sombra 2s;}
+  .imagen3
+  {
+    order: 2;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+    position: relative;
+    display: block;
+
+  }
+  @-webkit-keyframes movimiento
+  {
+    to
+    {
+      transform: translate(20px,-5px);
+      border: 2px solid;
+      box-shadow: 5px 5px 5px 0 #82c3a6;
+    }
+  }
+  .imagen3:hover
+  {
+    animation: movimiento 2s;
+  }
+
+  @-webkit-keyframes rotacion{
+    to{
+      transform: rotate(10deg);
+      border: 2px solid;
+      box-shadow: 5px 5px 5px 0 #82c3a6;
+    }
+
+  }
+  .piedepagina
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .contenedorimagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .contacto
+  {
+    order: 1;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: block;
+  }
+  .terminos
+  {
+    order: 2;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: block;
+  }
+  .redes
+  {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+  }
+  .derechos
+  {
+    order: 4;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: block;
+  }
+}
+@media all and (max-width: 900px){
+  .contenedorimagenes
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #d5c75f
+  }
+  .contenedor{
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+
+  }
+  .redes
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .imagen2
+  {
+    order: 1;
+    width: 80%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    border: 1px solid black;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+
+
+  .imagen2:hover
+  {animation: rotacion 2s;
+  }
+  .imagen3
+  {
+    order: 2;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+    position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+
+  }
+  @-webkit-keyframes movimiento
+  {
+    to
+    {
+      transform: translate(20px,-5px);
+      border: 2px solid;
+
+    }
+  }
+  .imagen3:hover
+  {
+    animation: movimiento 2s;
+  }
+  @-webkit-keyframes rotacion{
+    to{
+      transform: rotate(10deg);
+      border: 2px solid;
+      box-shadow: 5px 5px 5px 0 #82c3a6;
+    }
+
+  }
+  .piedepagina
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .galeria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #d5c75f;
+  }
+  .paisaje1
+  {
+    order: 1;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje2
+  {
+    order: 2;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje3
+  {
+    order: 3;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+  display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje4
+  {
+    order: 4;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje5
+  {
+    order: 5;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisaje6
+  {
+    order: 6;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  position: relative;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+  }
+}
+footer
+{
+  border-radius: 8px;
+  background-color: #C6d5c5;
+
+}
+@media all and (max-width: 5000px) and (min-width: 900px){
+
+	.contenido
+	{
+		width: 900px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 899px){
+
+	.contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
